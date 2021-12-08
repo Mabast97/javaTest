@@ -25,6 +25,7 @@ public class StudentController {
         return new ResponseEntity<Student>(studentService.saveStudent(student), HttpStatus.CREATED);
     }
 
+
     @GetMapping("testing/student/{id}")
     public Student getStudentById(@PathVariable Long id) {
         return new Student();
@@ -34,6 +35,7 @@ public class StudentController {
 //    public ResponseEntity<Student> updateStudent(@PathVariable Long id, @RequestBody Student student) {
 //
 //    }
+
 
 
 }
